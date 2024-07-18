@@ -16,11 +16,15 @@ Checks to see a word is a palindrome, or same forwards and backwards spelled.
 
 
 """
+
 def findPalindrome(word: str):
     backwards = ''
     
     # Removes spaces in a string
     word = word.replace(" ", '')
+    
+    # Makes all words lower case (so letter case doesn't matter)
+    word = word.lower()
     
     length = len(word) - 1
     
@@ -34,7 +38,13 @@ def findPalindrome(word: str):
 
 
 inputStr = input('Check palindrome of word: ')
-print(findPalindrome(inputStr))
+
+# Checks if all characters are alphabetic
+if all(char.isalpha() for char in inputStr):
+    print(findPalindrome(inputStr))
+else:
+    print("Please refrain from using non-alphabetic characters!")
+
     
         
     
