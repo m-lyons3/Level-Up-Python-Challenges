@@ -4,7 +4,7 @@ Created on Tue Jul 23 14:32:42 2024
 
 @author: Maria Lyons
 
-Password Problem
+Password Problem: Automatically generate a password
 
 """
 """ 
